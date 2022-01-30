@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  background: white;
+  box-shadow: 0 -2px 5px rgba(0 0 0 / 2%);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  margin-top: 20px;
+}
+.nav .link {
+  width: 55px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

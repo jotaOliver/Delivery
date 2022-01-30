@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  --type-first: "Poppins", sans-serif;
+  --cor-first: #ffd200;
+  --cor-text-first: #373737;
+  --cor-text-second: #838383;
+  --cor-link: #ff7000;
+  --cor-sucess: #6dc54a;
+  --cor-white: #fff;
+  font-family: var(--type-first);
+  color: var(--cor-text-first);
+  background-color: #f6f6f6;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--type-first);
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.mainContainer {
+  margin-top: 4rem;
+}
+.title {
+  font-family: var(--type-first);
+  line-height: 1;
+  font-size: 3rem;
+  margin: 1rem 0;
+  position: relative;
+  z-index: 1;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 5px;
+  left: -5px;
+  border-radius: 0.2rem;
+  background-color: var(--cor-first);
+  z-index: -1;
+}
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes animeLeft {
   to {
-    transform: rotate(360deg);
+    opacity: initial;
+    transform: initial;
   }
+}
+header nav .active {
+  background: var(--cor-first);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+header nav .active svg path {
+  stroke: #fff;
+}
+.swiper {
+  padding: 0 1rem !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--cor-first) !important;
 }

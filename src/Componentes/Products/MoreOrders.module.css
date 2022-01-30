@@ -1,0 +1,29 @@
+.moreOrders h3 {
+  padding: 0 1rem 0.625rem 1rem;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  height: 140px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+.info {
+  padding: 0 0.313rem;
+}
+.classific {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.star,
+.time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.time h5 {
+  color: var(--cor-text-second);
+  font-weight: 400;
+}
