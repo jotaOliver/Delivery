@@ -7,7 +7,7 @@ import SubTitle from "./Title/SubTitle";
 
 function Home() {
   return (
-    <main>
+    <main className="animate__animated animate__fadeInLeft animate__faster">
       <LocationInfo />
       <Promotion />
       <SubTitle titulo="Mais Vendidos" />

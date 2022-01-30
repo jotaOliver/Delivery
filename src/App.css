@@ -4,8 +4,10 @@
   margin: 0;
   padding: 0;
 }
-
-body {
+:root {
+  --animate-duration: 0.6s !important;
+  --animate-delay: 0.6s !important;
+  --animate-repeat: 1;
   --type-first: "Poppins", sans-serif;
   --cor-first: #ffd200;
   --cor-text-first: #373737;
@@ -13,10 +15,12 @@ body {
   --cor-link: #ff7000;
   --cor-sucess: #6dc54a;
   --cor-white: #fff;
+}
+body {
   font-family: var(--type-first);
   color: var(--cor-text-first);
   background-color: #f6f6f6;
-  min-height: 200vh;
+  margin-bottom: 75px;
 }
 ul,
 li {

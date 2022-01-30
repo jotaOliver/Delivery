@@ -6,12 +6,12 @@
 }
 .product {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 115px 1fr;
   margin: 0 1rem 0.625rem 1rem;
   background-color: var(--cor-white);
   border-radius: 15px;
 }
-img {
+.img {
   border-radius: 15px;
   height: 100%;
   width: 100%;
