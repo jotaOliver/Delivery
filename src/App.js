@@ -7,7 +7,6 @@ import Home from "./Componentes/Home";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -15,6 +14,7 @@ function App() {
           <ProtectedRoute path="conta/*" element={<User />} /> */}
         </Routes>
       </div>
+      <Header />
     </BrowserRouter>
   );
 }

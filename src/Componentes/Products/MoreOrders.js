@@ -16,7 +16,6 @@ import { FreeMode } from "swiper";
 const MoreOrders = () => {
   return (
     <section className={style.moreOrders}>
-      <h3>Mais Vendidos</h3>
       <Swiper
         slidesPerView={2.2}
         spaceBetween={20}

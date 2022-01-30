@@ -16,6 +16,7 @@ body {
   font-family: var(--type-first);
   color: var(--cor-text-first);
   background-color: #f6f6f6;
+  min-height: 200vh;
 }
 ul,
 li {
@@ -51,29 +52,7 @@ img {
   margin: 0 auto;
   padding: 0 1rem;
 }
-.mainContainer {
-  margin-top: 4rem;
-}
-.title {
-  font-family: var(--type-first);
-  line-height: 1;
-  font-size: 3rem;
-  margin: 1rem 0;
-  position: relative;
-  z-index: 1;
-}
-.title::after {
-  content: "";
-  display: block;
-  width: 1.5rem;
-  height: 1.5rem;
-  position: absolute;
-  bottom: 5px;
-  left: -5px;
-  border-radius: 0.2rem;
-  background-color: var(--cor-first);
-  z-index: -1;
-}
+
 .animeLeft {
   opacity: 0;
   transform: translateX(-20px);
