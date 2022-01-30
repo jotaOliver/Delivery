@@ -1,7 +1,9 @@
+.moreOrders {
+  margin-bottom: 1rem;
+}
 .moreOrders h3 {
   padding: 0 1rem 0.625rem 1rem;
 }
-
 .img {
   width: 100%;
   object-fit: cover;

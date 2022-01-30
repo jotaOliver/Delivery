@@ -1,0 +1,53 @@
+.listProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.product {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin: 0 1rem 0.625rem 1rem;
+  background-color: var(--cor-white);
+  border-radius: 15px;
+}
+img {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.classific {
+  display: grid;
+  grid-template-columns: 40px 60px 1fr;
+  gap: 5px;
+  margin-top: 0.313rem;
+}
+.info {
+  padding: 0.625rem;
+}
+.info h5 {
+  line-height: 110%;
+  color: var(--cor-text-second);
+  font-weight: 400;
+}
+.star,
+.time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.time h6 {
+  color: var(--cor-text-second);
+  font-weight: 400;
+}
+.price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.price h5 {
+  padding: 0.313rem;
+  font-weight: 700;
+  border-radius: 15px;
+}
