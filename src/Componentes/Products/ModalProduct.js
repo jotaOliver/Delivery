@@ -9,6 +9,22 @@ import SubTitle from "../Title/SubTitle";
 import { Link } from "react-router-dom";
 
 const ModalProduct = () => {
+  const [qtde, setQtde] = React.useState(1);
+  const [price, setPrice] = React.useState(4.5);
+
+  const handleClickSome = React.useCallback(() => {
+    if (qtde < 10) {
+      setQtde((qtde) => qtde + 1);
+      setPrice((price) => price + 4.5);
+    }
+  }, [qtde]);
+
+  const handleClickSub = React.useCallback(() => {
+    if (qtde > 1) {
+      setQtde((qtde) => qtde - 1);
+      setPrice((price) => price - 4.5);
+    }
+  }, [qtde]);
   return (
     <>
       <section
@@ -17,9 +33,13 @@ const ModalProduct = () => {
         <figure className={style.product}>
           <img src={fotoUm} alt="" className={style.img} />
           <form className={style.form}>
-            <Button type="button">-</Button>
-            <Title titulo="1" />
-            <Button type="button">+</Button>
+            <Button type="button" onClick={handleClickSub}>
+              -
+            </Button>
+            <Title titulo={qtde} />
+            <Button type="button" onClick={handleClickSome}>
+              +
+            </Button>
           </form>
           <div className={style.info}>
             <Title titulo="Esfirra" />
@@ -34,7 +54,7 @@ const ModalProduct = () => {
               </div>
               <div className={style.price}>
                 <h2>
-                  <span>R$</span> 4,50
+                  <span>R$</span> {price}
                 </h2>
               </div>
             </div>
@@ -52,10 +72,11 @@ const ModalProduct = () => {
         </figure>
       </section>
       <Link to="" className={style.botao}>
-        <p>1 item</p>
+        <p>{qtde} item</p>
         <h4>Adicionar ao Carrinho</h4>
         <h4>
-          <span>R$ </span>4,50
+          <span>R$ </span>
+          {price}
         </h4>
       </Link>
     </>

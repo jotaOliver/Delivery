@@ -12,6 +12,7 @@
   --cor-first: #ffd200;
   --cor-text-first: #373737;
   --cor-text-second: #838383;
+  --cor-suport: #f8f8fa;
   --cor-link: #ff7000;
   --cor-sucess: #6dc54a;
   --cor-white: #fff;
@@ -46,7 +47,10 @@ input {
   font-family: var(--type-first);
   color: #333;
 }
-
+main {
+  min-height: 80vh;
+  position: relative;
+}
 img {
   max-width: 100%;
   display: block;
