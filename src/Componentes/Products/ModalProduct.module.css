@@ -6,10 +6,18 @@
   background-color: #f6f6f6;
   margin-bottom: 50px;
   padding-bottom: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.modalProducts figure {
+  width: 100%;
 }
 .img {
   width: 100%;
-  height: 200px;
+  height: 260px;
   object-fit: cover;
   border-radius: 0 0 15px 15px;
 }
@@ -19,10 +27,17 @@
   grid-template-columns: 50px 70px 1fr;
   gap: 5px;
   align-items: flex-end;
+  height: 27px;
 }
 .info {
   padding: 1rem;
   overflow: scroll;
+}
+.info h3 {
+  margin-left: 0;
+}
+.info h1 {
+  line-height: 110%;
 }
 .info h4 {
   font-weight: 400;
@@ -33,6 +48,24 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.btnBack {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 45px;
+  width: 45px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--cor-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btnBack:hover {
+  background-color: var(--cor-first);
 }
 .time h5 {
   color: var(--cor-text-second);
@@ -61,7 +94,8 @@
   background-color: var(--cor-suport);
   margin: 0 auto -25px auto;
   transform: translateY(-25px);
-  border-radius: 15px;
+  border-radius: 10px;
+  height: 45px;
   box-shadow: 0 0 5px rgba(0 0 0 / 15%);
 }
 .form button {

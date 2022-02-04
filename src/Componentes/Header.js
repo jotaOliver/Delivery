@@ -29,7 +29,7 @@ const Header = () => {
         </NavLink>
         <NavLink
           className={style.link}
-          to="/perfil"
+          to="/login"
           aria-label="Entre Amigos - Perfil"
         >
           <User className={style.svg} />

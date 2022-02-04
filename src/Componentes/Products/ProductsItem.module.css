@@ -3,13 +3,15 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin: 0 1rem 0.625rem 1rem;
 }
 .product {
   display: grid;
   grid-template-columns: 115px 1fr;
-  margin: 0 1rem 0.625rem 1rem;
+  margin-bottom: 0.625rem;
   background-color: var(--cor-white);
   border-radius: 15px;
+  width: 100%;
 }
 .img {
   border-radius: 15px;
@@ -25,11 +27,18 @@
 }
 .info {
   padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .info h5 {
   line-height: 110%;
   color: var(--cor-text-second);
   font-weight: 400;
+}
+.info h4 {
+  line-height: 105%;
+  margin-bottom: 5px;
 }
 .star,
 .time {

@@ -5,7 +5,7 @@ import "animate.css";
 import Header from "./Componentes/Header";
 import Home from "./Componentes/Home";
 import Pedidos from "./Componentes/Pedidos";
-import ModalProduct from "./Componentes/Products/ModalProduct";
+import Login from "./Componentes/Login/Login";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="produto/*" element={<ModalProduct />} />
+          <Route path="login/*" element={<Login />} />
           <Route path="pedidos/*" element={<Pedidos />} />
           {/* <ProtectedRoute path="conta/*" element={<User />} /> */}
         </Routes>
